@@ -106,7 +106,7 @@ docker run -d \
 
 # 3. 部署 NASTOOLS
 echo "正在拉取 NASTOOLS 镜像..."
-docker pull jxxghp/nas-tools:latest || { echo "错误: 无法拉取 NASTOOLS 镜像，请检查网络。"; exit 1; }
+docker pull jxxghp/nastools/nas-tools:2.9.1 || { echo "错误: 无法拉取 NASTOOLS 镜像，请检查网络。"; exit 1; }
 echo "正在部署 NASTOOLS 容器..."
 docker run -d \
   --name=nastools \
